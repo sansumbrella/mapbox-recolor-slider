@@ -3,7 +3,7 @@ import "./App.css";
 import { MapContainer } from "./MapContainer";
 
 interface State {
-  sliderValue: 0.5;
+  sliderValue: number;
 }
 
 interface Props {}
@@ -25,6 +25,22 @@ class App extends PureComponent<Props, State> {
           waterPalette={[{ h: 0.5, s: 0.5, l: 0.5 }, { h: 0.6, s: 0.2, l: 0.8 }]}
           palettePosition={sliderValue}
         />
+        <div>
+          <input
+            type="range"
+            name="mix"
+            min="0"
+            max="1"
+            step="0.01"
+            value={sliderValue}
+            onChange={amt => {
+              this.setState({
+                sliderValue: parseFloat(amt.target.value)
+              });
+            }}
+          />
+          <label htmlFor="mix">Mix:</label>
+        </div>
       </div>
     );
   }
