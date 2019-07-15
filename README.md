@@ -1,3 +1,7 @@
+Quick and dirty showing how to update styles on the fly in Mapbox GL JS.
+This project is [hosted on github.io](https://sansumbrella.github.io/mapbox-recolor-slider/#15.62/37.810361/-122.411142).
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
