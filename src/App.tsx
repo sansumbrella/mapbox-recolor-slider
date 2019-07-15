@@ -21,8 +21,8 @@ class App extends PureComponent<Props, State> {
       <div className="App">
         <MapContainer
           accessToken="pk.eyJ1IjoiZGF2aWQtd2lja3MiLCJhIjoiY2p5NGpqN3p6MDBoYzNncDhoM283ZjNubSJ9.CR6hBpiQ37nyNGIcdgffbQ"
-          buildingPalette={[{ h: 0.5, s: 0.5, l: 0.5 }, { h: 0.6, s: 1.0, l: 0.4 }]}
-          waterPalette={[{ h: 0.5, s: 0.5, l: 0.5 }, { h: 0.6, s: 0.2, l: 0.8 }]}
+          buildingPalette={[{ h: 0.0, s: 0.0, l: 1.0 }, { h: 0.1, s: 0.1, l: 0.15 }]}
+          waterPalette={[{ h: 0.6, s: 0.5, l: 0.8 }, { h: 0.61, s: 0.5, l: 0.25 }]}
           palettePosition={sliderValue}
         />
         <div className="controls">
