@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f189adef37555b6bdd2c37c0488d5948",
+    "revision": "a0b7db01ecffc66d116976c12f03b7d4",
     "url": "/mapbox-recolor-slider/index.html"
   },
   {

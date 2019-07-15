@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mapbox-recolor-slider/precache-manifest.de908e814c4e5bab2f85fbc0fca7d9d0.js"
+  "/mapbox-recolor-slider/precache-manifest.b7829245fc53e3c3899714f18ee65339.js"
 );
 
 self.addEventListener('message', (event) => {
