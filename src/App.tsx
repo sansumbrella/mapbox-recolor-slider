@@ -25,7 +25,8 @@ class App extends PureComponent<Props, State> {
           waterPalette={[{ h: 0.5, s: 0.5, l: 0.5 }, { h: 0.6, s: 0.2, l: 0.8 }]}
           palettePosition={sliderValue}
         />
-        <div>
+        <div className="controls">
+          <label htmlFor="mix">Mix</label>
           <input
             type="range"
             name="mix"
@@ -39,7 +40,6 @@ class App extends PureComponent<Props, State> {
               });
             }}
           />
-          <label htmlFor="mix">Mix:</label>
         </div>
       </div>
     );

@@ -2,6 +2,20 @@ body {
   margin: 0;
   padding: 0;
 }
-.App {
-  height: 100%;
+
+.controls {
+  background: #fff;
+  max-width: 25%;
+  padding: 1em;
+  margin: 0.5em;
+  box-shadow: 1px 1px 4px 2px rgba(10, 10, 10, 0.2);
+}
+
+.controls input {
+  width: 80%;
+}
+
+.controls label {
+  margin-right: 1em;
+  font-weight: bold;
 }
