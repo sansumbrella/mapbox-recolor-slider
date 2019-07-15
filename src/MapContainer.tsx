@@ -15,6 +15,7 @@ export interface Props {
   accessToken: string;
   //
   buildingPalette: [Color, Color];
+  landPalette: [Color, Color];
   waterPalette: [Color, Color];
   palettePosition: number; // [0, 1]
 }
@@ -59,7 +60,7 @@ export class MapContainer extends PureComponent<Props, State> {
   }
 
   updateMap() {
-    const { buildingPalette, waterPalette, palettePosition } = this.props;
+    const { buildingPalette, landPalette, waterPalette, palettePosition } = this.props;
     const buildings = colorToString(mixPalette(buildingPalette, palettePosition));
     const water = colorToString(mixPalette(waterPalette, palettePosition));
     const waterway = colorToString(mixPalette(waterPalette, clamp(palettePosition - 0.1)));
@@ -74,6 +75,8 @@ export class MapContainer extends PureComponent<Props, State> {
       map.setPaintProperty("water", "fill-color", water);
       map.setPaintProperty("waterway", "line-color", waterway);
       map.setPaintProperty("water-shadow", "fill-color", waterShadow);
+
+      map.setPaintProperty("land", "background-color", colorToString(mixPalette(landPalette, palettePosition)));
     }
   }
 
